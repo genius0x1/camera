@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <style>
+            #root {
+                width: 100vw;
+                height: 100vh;
+            }
+        </style>
+    </head>
+    <body>
+        <div id="root"></div>
+    </body>
+    <script src="https://unpkg.com/@zegocloud/zego-uikit-prebuilt/zego-uikit-prebuilt.js"></script>
+    <script>
+        const roomID = "8#xRd4Q6&Z3qB9%p7@";
+        const userID = Math.floor(Math.random() * 10000) + "";
+        const userName = "userName" + userID;
+        const appID = 1177179775;
+        const serverSecret = "7dffb8135889d203825fec23cc3b8242";
+        const kitToken =  ZegoUIKitPrebuilt.generateKitTokenForTest(appID, serverSecret, roomID, userID, userName);
+        const zp = ZegoUIKitPrebuilt.create(kitToken);
+        zp.joinRoom({
+            container: document.querySelector("#root"),
+            sharedLinks: [{
+                url: window.location.protocol + '//' + window.location.host + window.location.pathname + '?roomID=' + roomID,
+            }],
+            scenario: {
+                mode: ZegoUIKitPrebuilt.GroupCall,
+            },
+        });
+    </script>
+</html>
