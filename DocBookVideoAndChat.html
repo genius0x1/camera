@@ -1,14 +1,189 @@
+
 <html>
     <head>
+        <script src="https://kit.fontawesome.com/b0d972bce3.js" crossorigin="anonymous"></script>
         <style>
+            body {
+                margin: 0;
+                font-family: Calibri
+            }
+            header {
+                padding: 20px 0;
+                background-color: #3B5999;
+                font-size: 80px;
+                font-weight: bold;
+                color: white;
+                display: flex;
+                gap: 30px;
+                justify-content: center
+            }
+            @media (max-width: 992px) {
+                header {
+                    display: none;
+                }
+            }
             #root {
-                width: 100vw;
+                width: 100%;
                 height: 100vh;
+            }
+            .VsTVUAD89KWleD0YRVsD { /* join button */
+                background-color: #3B5999 !important;
+            }
+            .dQDNvqxeCXpZG5yOs9Ou { /* copy link */
+                display: none !important;
+            }
+            .contact {
+                background-color: #3B5999
+            }
+            @media (max-width: 992px) {
+                .contact {
+                    display: none
+                }
+            }
+            .contact .content {
+                width: 90.78%;
+                margin-left: auto;
+                margin-right: auto;
+                padding-top: 34px;
+                padding-bottom: 38px;
+                display: flex;
+                justify-content: space-between;
+                align-items: flex-start
+            }
+            .contact .content .doc h4 {
+                margin-top: 0;
+                margin-bottom: 8px;
+                color: #FFFFFF;
+                font-size: 45px;
+                font-weight: 700;
+            }
+            .contact .content .doc p {
+                width: 262px;
+                margin-top: 0;
+                color: #FFFFFF;
+                font-size: 24px;
+                line-height: 29px;
+            }
+            .contact .content .contact2 h4 {
+                margin-top: 0;
+                margin-bottom: 19px;
+                font-size: 32px;
+                font-weight: 700;
+                line-height: 39px;
+                color: #FFFFFF
+            }
+            .contact .content .contact2 .box {
+                display: flex;
+                align-items: center;
+                gap: 20px
+            }
+            .contact .content .contact2 .box:not(:last-of-type) {
+                margin-top: 0;
+                margin-bottom: 18px;
+            }
+            .contact .content .contact2 .box .ico {
+                width: 30px;
+                text-align: center
+            }
+            .contact .content .contact2 .box p {
+                margin-top: 0;
+                margin-bottom: 0;
+                margin-bottom: 0;
+                color: #FFFFFF;
+                font-size: 24px;
+                font-weight: 400;
+                line-height: 29px
+            }
+            .contact .content .images h4 {
+                margin-top: 0;
+                margin-bottom: 25px;
+                color: #FFFFFF;
+                font-size: 32px;
+                font-weight: 700;
+            }
+            .contact .content .images div {
+                margin-top: 0;
+                margin-bottom: 0;
+                font-size: 35px;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                gap: 18px
+            }
+            .contact .content .images div a {
+                color: white
+            }
+            .QAHxuJxRZWb3P_cbR8QA {
+                background-color: white !important;
+                padding: 0 !important
+            }
+            .lRNsiz_pTf7YmA5QMh4z {
+                border-radius: 0 !important
+            }
+            .z1WvYJgksHY23EwdFNB5, ._lsMxWcmJ586WoIFahdx, .pVo6XoSfywa4eLk9ef2S {
+                background-color: white !important;
+                border-radius: 0 !important
+            }
+            .M4HRY2n7rpNAd1UjDNZe {
+                border-radius: 0 !important;
             }
         </style>
     </head>
     <body>
+        <header>
+            <i class="fa-solid fa-user-doctor"></i>
+            <span>DocBook</span>
+        </header>
         <div id="root"></div>
+        <div class="contact">
+            <div class="content">
+                <div class="doc">
+                    <h4>DocBook</h4>
+                    <p>Search, compare and book doctor consultations with ease.</p>
+                </div>
+                <div class="contact2">
+                    <h4>Contact us</h4>
+                    <div class="box">
+                        <div class="ico">
+                            <img src="phone2.png">
+                        </div>
+                        <p>01015758541</p>
+                    </div>
+                    <div class="box">
+                        <div class="ico">
+                            <img src="web.png">
+                        </div>
+                        <p>www.docbook.com</p>
+                    </div>
+                    <div class="box">
+                        <div class="ico">
+                            <img src="location.png">
+                        </div>
+                        <p>221 Baker street, london- England</p>
+                    </div>
+                    <div class="box">
+                        <div class="ico">
+                            <img src="mail.png">                    
+                        </div>
+                        <p>docbook15@gmail.com</p>
+                    </div>
+                </div>
+                <div class="images">
+                    <h4>Follow us</h4>
+                    <div>
+                        <a href="https://www.facebook.com/" target="_blank">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.instagram.com/" target="_blank">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                        <a href="https://twitter.com/" target="_blank">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
     </body>
     <script src="https://unpkg.com/@zegocloud/zego-uikit-prebuilt/zego-uikit-prebuilt.js"></script>
     <script>
